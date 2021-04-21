@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Roomout.Roomout1Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mypage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/basket_cart_grayimage" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/oneroom_register_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="원룸 등록하기"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_toolbar" />
+
+    <TextView
+        android:id="@+id/building_name_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="건물 이름"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneroom_register_menu" />
+
+    <EditText
+        android:id="@+id/building_name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:hint="건물 이름"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building_name_menu" />
+
+    <TextView
+        android:id="@+id/building_address_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="건물 주소"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building_name_editText" />
+
+    <EditText
+        android:id="@+id/building_address_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:hint="건물 주소"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building_address_menu" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/radius_maincolor"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="주소찾기"
+        android:textColor="@color/main_color"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/building_address_editText"
+        app:layout_constraintStart_toEndOf="@+id/building_address_editText"
+        app:layout_constraintTop_toTopOf="@+id/building_address_editText" />
+
+    <TextView
+        android:id="@+id/landlord_information_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="방 임대인 정보 입력하기"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building_address_editText" />
+
+    <TextView
+        android:id="@+id/landlord_name_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="임대인 이름"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_information_menu" />
+
+    <EditText
+        android:id="@+id/landlord_name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:hint="임대인 이름"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_name_menu" />
+
+    <TextView
+        android:id="@+id/landlord_phone_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="임대인 휴대폰번호"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_name_editText" />
+
+    <EditText
+        android:id="@+id/landlord_phone_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:hint="임대인 휴대폰번호"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_phone_menu" />
+
+    <TextView
+        android:id="@+id/landlord_introduce_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:text="임대인 소개"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_phone_editText" />
+
+    <EditText
+        android:id="@+id/landlord_introduce_editText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/cafe24_surround"
+        android:hint="내용을 입력하세요"
+        android:padding="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_black"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landlord_introduce_menu" />
+
+    <Button
+        android:id="@+id/roomout1_nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/radius_mypage_detail_save"
+        android:fontFamily="@font/cafe24_square"
+        android:text="다음"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mypage_detail_middle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

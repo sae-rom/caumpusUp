@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1055300767764",
+    "project_id": "campusup-caa45",
+    "storage_bucket": "campusup-caa45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055300767764:android:e57b809a8127c034675701",
+        "android_client_info": {
+          "package_name": "seoulsoft.kr.campusup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055300767764-dkc1agksh49uv1dmv5o28f62a0r9qqgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "seoulsoft.kr.campusup",
+            "certificate_hash": "d02a8cc279b474ec56a4e5f0c9f58eb15eaaf070"
+          }
+        },
+        {
+          "client_id": "1055300767764-ks0q53a6etd5o89l9i9d23dhg1of9loq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhSkIOWDwG05Ktq83yYIOgrlslK5Svqm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055300767764-ks0q53a6etd5o89l9i9d23dhg1of9loq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

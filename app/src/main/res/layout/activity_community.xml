@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/commu_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/commu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cafe24_surround"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="o"
+            tools:text="커뮤니티" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/board_total"
+        style="styleborder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/commu_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title">
+
+        <TextView
+            android:id="@+id/total_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cafe24_surround"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="전체 게시판"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/board_total_1"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_total_1"
+            app:layout_constraintTop_toBottomOf="@+id/total_title"
+            tools:text="자유 게시판" />
+
+        <ImageView
+            android:id="@+id/img_total_1"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_title"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/post" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/board_student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/commu_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_total">
+
+        <TextView
+            android:id="@+id/student_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cafe24_surround"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="학생 게시판" />
+
+        <ImageView
+            android:id="@+id/img_st_1"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_title"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_2"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_1"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_3"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_2"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_4"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_3"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_5"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_4"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_6"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_5"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_st_7"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_6"
+            app:srcCompat="@drawable/post" />
+
+        <TextView
+            android:id="@+id/board_st_1"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_1"
+            app:layout_constraintTop_toBottomOf="@+id/student_title"
+            tools:text="자유 게시판" />
+
+        <TextView
+            android:id="@+id/board_st_2"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_2"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_1"
+            tools:text="정보 게시판" />
+
+        <TextView
+            android:id="@+id/board_st_3"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_3"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_2"
+            tools:text="공모전" />
+
+        <TextView
+            android:id="@+id/board_st_4"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_4"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_3"
+            tools:text="대외 활동" />
+
+        <TextView
+            android:id="@+id/board_st_5"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_5"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_4"
+            tools:text="취업과 진로" />
+
+        <TextView
+            android:id="@+id/board_st_6"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_st_6"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_5"
+            tools:text="취미 게시판" />
+
+        <TextView
+            android:id="@+id/board_st_7"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_st_7"
+            app:layout_constraintTop_toBottomOf="@+id/board_st_6"
+            tools:text="학과별 게시판" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/board_university"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/commu_border"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_student">
+
+        <TextView
+            android:id="@+id/uni_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cafe24_surround"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="학교 게시판" />
+
+        <ImageView
+            android:id="@+id/img_uni_1"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uni_title"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_2"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_1"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_3"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_2"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_4"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_3"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_5"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_4"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_6"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_5"
+            app:srcCompat="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/img_uni_7"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_uni_6"
+            app:srcCompat="@drawable/post" />
+
+        <TextView
+            android:id="@+id/board_uni_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_1"
+            app:layout_constraintTop_toBottomOf="@+id/uni_title"
+            tools:text="자유 게시판" />
+
+        <TextView
+            android:id="@+id/board_uni_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_2"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_1"
+            tools:text="정보 게시판" />
+
+        <TextView
+            android:id="@+id/board_uni_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_3"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_2"
+            tools:text="공모전" />
+
+        <TextView
+            android:id="@+id/board_uni_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_4"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_3"
+            tools:text="과제 게시판" />
+
+        <TextView
+            android:id="@+id/board_uni_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_5"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_4"
+            tools:text="강의 게시판" />
+
+        <TextView
+            android:id="@+id/board_uni_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_6"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_5"
+            tools:text="동아리 홍보방" />
+
+        <TextView
+            android:id="@+id/board_uni_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/nanum_barunpen_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_uni_7"
+            app:layout_constraintTop_toBottomOf="@+id/board_uni_6"
+            tools:text="헬프미" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/item_color"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

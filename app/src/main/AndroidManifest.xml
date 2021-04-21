@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="seoulsoft.kr.campusup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Account.SignupActivity" />
+        <activity android:name=".Account.MypageDetailActivity" />
+        <activity android:name=".Account.UserSearchActivity" />
+        <activity android:name=".Account.LoginEtcActivity" />
+        <activity android:name=".Roomout.AddressFindActivity"/>
+        <activity android:name=".Common.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Account.LoginActivity" />
+        <activity android:name=".Common.MainActivity" />
+    </application>
+
+</manifest>

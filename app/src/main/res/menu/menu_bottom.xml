@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        android:enabled="true"
+        android:checked="true"
+        android:title="방찾기" />
+
+    <item
+        android:id="@+id/map"
+        app:showAsAction="always"
+        android:icon="@drawable/map"
+        android:enabled="true"
+        android:checked="true"
+        android:title="지도" />
+
+    <item
+        android:id="@+id/circles"
+        app:showAsAction="always"
+        android:icon="@drawable/calendar"
+        android:enabled="true"
+        android:checked="true"
+        android:title="동아리클래스" />
+
+    <item
+        android:id="@+id/community"
+        app:showAsAction="always"
+        android:icon="@drawable/community"
+        android:enabled="true"
+        android:checked="true"
+        android:title="커뮤니티" />
+
+    <item
+        android:id="@+id/mypage"
+        app:showAsAction="always"
+        android:icon="@drawable/mypage"
+        android:enabled="true"
+        android:checked="true"
+        android:title="마이페이지" />
+</menu>
